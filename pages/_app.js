@@ -1,0 +1,14 @@
+import Head from 'next/head'
+import Script from 'next/script'
+import Layout from '../components/Layout'
+import '/public/assets/css/main.css'
+
+function MyApp({ Component, pageProps }) {
+  return (
+    <Layout>
+      <Component {...pageProps} />
+    </Layout>
+  )
+}
+
+export default MyApp
